@@ -1,0 +1,52 @@
+Fitur-fitur:
+1. Pembelian tanah
+2. Detail denah tanah
+3. Detail pembelian
+
+Alur:
+
+Pembelian tanah:
+1. Show denah tanah
+
+[A01][A02][A03][A04]
+[B01][B02][B03][B04]
+[C01][C02][C03][C04]
+[D01][D02][D03][D04]
+
+2. User memilih petak tanah berdasar kode
+3. User mengisi identitas
+4. Data tersimpan status tanah menjadi "sold"
+
+
+
+
+Detail denah tanah:
+1. Show denah tanah
+[A01][A02][A03][A04]
+[B01][B02][B03][B04]
+[C01][C02][C03][C04]
+[D01][D02][D03][D04]
+
+Kode:
+Lebar tanah :
+Harga:
+    
+
+
+Detail status pembelian:
+1. 
+[A01][A02][A03][A04]
+[B01][B02][B03][B04]
+[C01][C02][C03][C04]
+[D01][D02][D03][D04]
+
+Kode : A02
+Status : Terjual
+Nama pembeli :
+Alamat pembeli:
+Harga : 
+
+
+Variable:
+struct pembeli: nama, alamat, nomor telepon, NIK, struct tanah
+struct tanah: kode tanah, harga, ukuran

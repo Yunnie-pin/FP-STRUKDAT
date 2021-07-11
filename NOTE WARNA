@@ -1,0 +1,42 @@
+COMMAND CHANGE
+
+WINDOWS                 |   LINUX           |   WARNA
+color 2c                |printf '\033[32m'  | HIJAU
+color 4c                |printf '\033[31m'  | MERAH
+color 0c                |printf '\033[30m'  | HITAM
+
+
+system(" ");
+
+cin >> index
+
+
+    //[00][01][02][03]
+    //[04][05][06][07]
+    //[08][09][10][11]
+    //[12][13][14][15]
+
+
+input = 0-15
+input 0(terjual)
+
+
+//search
+for(int i = 0; i = 15 ; i++){
+
+    if(input == kodeTanah[i]){
+        fungsiInput();
+    }
+
+}
+
+
+input == true {
+sudah terjual oleh ....
+}
+
+input == false {
+belum terjual
+masukkan nama anda untuk membeli ==
+
+
