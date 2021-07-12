@@ -82,27 +82,50 @@ char menu()
 
 void denah()
 {
-    for (int i = 0; i < SIZE_PEMBELI; i++)
+    system("clear");
+
+    cout << "DENAH KAPLING" << endl;
+
+    for (int i = 0; i < SIZE_PEMBELI; i++)      //fungsi pengecheckan 
     {
         check(pembeli[i].kode_tanah);
     }
 
-    system("printf '\033[31m'"); //warna merah
-    for (int i = 1; i <= SIZE_TANAH; i++)
-    {
-        cout << "[" << i << "]";
 
-        if (i % 4 == 0)
-        {
+
+    for (int i = 1; i <= SIZE_TANAH; i++)   //fungsi output denah
+    {
+        if(pembeli[i].sold==true){
+
+            system("printf '\033[31m'"); //warna merah 
+
+            cout << "[" << i << "]";
+
+            if (i % 4 == 0)
+            {
+                   cout << endl;
+            }
+            system("printf '\033[37m'"); //warna putih
+            
+        } else if (pembeli[i].sold==false){
+            system("printf '\033[32m'"); //warna hijau
+
+            cout << "[" << i << "]";
+            cout << pembeli[i].sold;
+            if (i % 4 == 0)
+            {
             cout << endl;
+            }
+            system("printf '\033[37m'"); //warna putih
         }
+
 
         tanah[i].kode_tanah = "0" + i;
         tanah[i].ukuran_tanah = 100;
         tanah[i].harga_tanah = 1000000;
     }
     system("printf '\033[37m'"); //warna putih
-    sidebar();
+
 }
 
 void pembelian_tanah()
